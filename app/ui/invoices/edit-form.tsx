@@ -23,6 +23,7 @@ export default function EditInvoiceForm({
   const initialState = {
     message: null, errors: {}
   }
+  //@ts-ignore
   const [state, dispatch] = useFormState(updateInvoinceWithId, initialState)
   return (
     <form action={dispatch}>
